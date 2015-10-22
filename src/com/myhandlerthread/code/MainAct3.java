@@ -13,7 +13,6 @@ import android.os.Handler;
 import android.text.format.DateUtils;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -26,7 +25,6 @@ import com.handmark.pulltorefresh.library.PullToRefreshBase;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.handmark.pulltorefresh.library.PullToRefreshScrollView;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -42,9 +40,8 @@ public class MainAct3 extends Activity {
 	TextView textView;
 	Handler handler = new Handler();
 
-	@ViewInject(R.id.refreshView)
-	PullToRefreshListView pullToRefreshListView;
-
+	 @ViewInject(R.id.refreshView)
+	PullToRefreshScrollView pullToRefreshListView;
 	private ImageRequest imageRequest;
 	private ImageRequest imageRequest2;
 
@@ -60,8 +57,7 @@ public class MainAct3 extends Activity {
 				.createDefault(getApplicationContext());
 
 		ImageLoader.getInstance().init(configuration);
-		// pullToRefreshListView = (PullToRefreshScrollView)
-		// findViewById(R.id.refreshView);
+		//pullToRefreshListView = (PullToRefreshScrollView) findViewById(R.id.refreshView);
 		pullToRefreshListView.getLoadingLayoutProxy().setLastUpdatedLabel(
 				"setLastUpdatedLabel");
 		pullToRefreshListView.getLoadingLayoutProxy()
@@ -118,23 +114,23 @@ public class MainAct3 extends Activity {
 		//
 		// });
 		pullToRefreshListView
-				.setOnRefreshListener(new OnRefreshListener2<ListView>() {
+				.setOnRefreshListener(new OnRefreshListener2<ScrollView>() {
 
 					@Override
 					public void onPullDownToRefresh(
-							PullToRefreshBase<ListView> refreshView) {
+							PullToRefreshBase<ScrollView> refreshView) {
 						// TODO Auto-generated method stub
+
 						queue.add(imageRequest2);
 					}
 
 					@Override
 					public void onPullUpToRefresh(
-							PullToRefreshBase<ListView> refreshView) {
+							PullToRefreshBase<ScrollView> refreshView) {
 						// TODO Auto-generated method stub
 						queue.add(imageRequest);
 					}
 				});
-
 	}
 
 	// @OnClick(R.id.imgbt)
