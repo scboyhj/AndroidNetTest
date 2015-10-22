@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/refreshView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/cycbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GC" />
+
+            <Button
+                android:id="@+id/imgbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BT" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFAA"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/mmtv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="INFO" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>
