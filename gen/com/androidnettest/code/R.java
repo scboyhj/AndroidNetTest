@@ -1227,6 +1227,8 @@ containing a value of this type.
         public static final int indicator_bg_top=0x7f02005d;
     }
     public static final class id {
+        public static final int Inbt1=0x7f05005a;
+        public static final int Inbt2=0x7f05005b;
         public static final int action_bar=0x7f050028;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f050027;
@@ -1238,7 +1240,7 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050030;
-        public static final int action_settings=0x7f050061;
+        public static final int action_settings=0x7f050063;
         public static final int activity_chooser_view_content=0x7f050031;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1258,7 +1260,7 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050032;
         public static final int expanded_menu=0x7f050038;
-        public static final int fl_inner=0x7f05005a;
+        public static final int fl_inner=0x7f05005c;
         public static final int flip=0x7f050022;
         public static final int gridview=0x7f050023;
         public static final int home=0x7f050014;
@@ -1274,8 +1276,8 @@ containing a value of this type.
         public static final int mbt=0x7f050053;
         public static final int middle=0x7f050012;
         public static final int mmtv=0x7f050050;
-        public static final int mtv=0x7f05005f;
-        public static final int mybt=0x7f050060;
+        public static final int mtv=0x7f050061;
+        public static final int mybt=0x7f050062;
         public static final int myhead=0x7f050059;
         public static final int myhover=0x7f050057;
         public static final int mytop=0x7f050058;
@@ -1289,10 +1291,10 @@ containing a value of this type.
         public static final int pullFromEnd=0x7f05001c;
         public static final int pullFromStart=0x7f05001b;
         public static final int pullUpFromBottom=0x7f050020;
-        public static final int pull_to_refresh_image=0x7f05005b;
-        public static final int pull_to_refresh_progress=0x7f05005c;
-        public static final int pull_to_refresh_sub_text=0x7f05005e;
-        public static final int pull_to_refresh_text=0x7f05005d;
+        public static final int pull_to_refresh_image=0x7f05005d;
+        public static final int pull_to_refresh_progress=0x7f05005e;
+        public static final int pull_to_refresh_sub_text=0x7f050060;
+        public static final int pull_to_refresh_text=0x7f05005f;
         public static final int radio=0x7f05003b;
         public static final int refreshView=0x7f05004c;
         public static final int rotate=0x7f050021;
@@ -1386,10 +1388,11 @@ containing a value of this type.
         public static final int measurelay=0x7f03001f;
         public static final int mylayout=0x7f030020;
         public static final int myscroll=0x7f030021;
-        public static final int pull_to_refresh_header_horizontal=0x7f030022;
-        public static final int pull_to_refresh_header_vertical=0x7f030023;
-        public static final int support_simple_spinner_dropdown_item=0x7f030024;
-        public static final int testlay=0x7f030025;
+        public static final int myviewlay=0x7f030022;
+        public static final int pull_to_refresh_header_horizontal=0x7f030023;
+        public static final int pull_to_refresh_header_vertical=0x7f030024;
+        public static final int support_simple_spinner_dropdown_item=0x7f030025;
+        public static final int testlay=0x7f030026;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;

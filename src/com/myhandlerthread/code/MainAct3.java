@@ -45,6 +45,9 @@ public class MainAct3 extends Activity {
 	private ImageRequest imageRequest;
 	private ImageRequest imageRequest2;
 
+	
+	
+	
 	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
